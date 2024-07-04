@@ -1,0 +1,21 @@
+{
+    "name": "tailwebs/teacherportal",
+    "description": "A web portal for teacher to manage student data",
+    "type": "project",
+    "require": {
+        "phpunit/phpunit": "^11.2"
+    },
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Tailwebs\\Teacherportal\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "pikato",
+            "email": "pikato@gmail.com"
+        }
+    ],
+    "minimum-stability": "stable"
+}
