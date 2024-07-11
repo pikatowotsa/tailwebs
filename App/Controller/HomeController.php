@@ -3,13 +3,16 @@ namespace App\Controller;
 
 use Teacherportal\Framework\Http\Controller;
 use Teacherportal\Framework\Http\Response;
+use Teacherportal\Framework\Http\Database;
+use Teacherportal\Framework\Http\CodeTest;
 
-class HomeController extends Controller
+class HomeController extends Response
 {
+
     public function index(): Response
     {
-        $content = '<h2>Hello World</h2>';
-        $content = Controller::view();
-        return new Response($content);
+      //CodeTest::insertIntoDB();
+      return Response::view("home");
     }
+
 }
