@@ -18,7 +18,7 @@ class DashboardController extends Response
             Response::redirect('');
         }
        $markRecords = (new Mark)->fetchRecords();
-     
+       
        // Create a Pagerfanta adapter with the result set
        $adapter = new ArrayAdapter($markRecords);
 
